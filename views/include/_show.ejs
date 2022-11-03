@@ -1,0 +1,15 @@
+<%for(var i=0; i < posts.length; i++){%>
+    <tr>
+        <td><%=posts[i].date%></td>
+        <td><%=posts[i].title%></td>
+        <td><%=posts[i].description%></td>
+        <td>
+            <a href="/pr/update-post?id=<%=posts[i]._id%>" class="btn border-shadow-inner update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a>
+            <a class="btn border-shadow-inner delete" data-id=<%=posts[i]._id%>>
+                <span class="text-gradient"><i class="fas fa-times"></i></span>
+            </a>
+        </td>
+    </tr>
+    <%}%>

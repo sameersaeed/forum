@@ -1,0 +1,17 @@
+<%-include('include/_header')%>
+<form id="login_user" method="POST" action="/home/api/user/login">
+    <h2 style="text-align: center;">Login</h2>
+    <div class="new_post">
+        <div class="form-group">
+            <label for="name" class="text-light">Username</label>                    
+            <input type="hidden" name="id">
+            <input type="text" name="name">
+
+            <label for="password" class="text-light">Password</label>                    
+            <input type="hidden" name="id">
+            <input type="password" name="password">
+
+            <button type="submit" class="btn text-dark update">Log in</button>
+        </div>
+    </div>
+</form><%-include('include/_footer')%>

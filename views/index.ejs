@@ -1,0 +1,25 @@
+ <%-include('include/_header')%>
+    <div class="text-center">
+    </div>
+    <div class="box-nav d-flex justify-between">
+        <a class="nav-brand text-dark"></a>
+        <a href="/pr/add-post" class="border-shadow">
+            <span class="text-gradient">New post <i class="fa-solid fa-pencil"></i></span>
+        </a>
+    </div>
+    <form action="/pr" method="POST">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Date</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <%-include('include/_show')%>
+            </tbody>
+        </table>
+    </form>
+<%-include('include/_footer')%>

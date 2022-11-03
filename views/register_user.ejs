@@ -1,0 +1,24 @@
+<%-include('include/_header')%>
+<form id="register_user" method="POST" action="/home/api/user/register">
+    <h2 style="text-align: center;">Register</h2>
+    <div class="new_post">
+        <div class="form-group">
+            <label for="name" class="text-light">* Username</label>                    
+            <input type="hidden" name="id">
+            <input type="text" name="name">
+
+            <label for="email" class="text-light">Email</label>                    
+            <input type="email" name="email">
+            
+            <label for="password" class="text-light">* Password</label>                    
+            <input type="password" name="password" id="password">
+            
+            <label for="confirm_password" class="text-light">* Confirm Password</label>                    
+            <input type="password" name="confirm" id="confirm">
+
+            <button type="submit" class="btn text-dark update">Register account</button>
+            <p style="padding-top:.5em">* - required field</p>
+        </div>
+    </div>
+</form>
+<%-include('include/_footer')%>
